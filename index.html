@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online ticket store">
+    <meta name="author" content="Smartinf">
+    <meta name="keywords" content="buy your tickets, theatre plays, concerts, music festivals, cinema, movies">
+    <title>Tickets - buy yours here!</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <img class="logo" src="images/logo.png" alt="logotipo da smartinf">
+      </div>
+      <div class="nav-bar">
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">Movies</a>
+          <a href="#">Plays</a>
+          <a href="#">Concerts</a>
+        </nav>
+        </div>
+        <div class="search-form">
+          <form action="/aplication.js" method="post">
+            <input type="text" class="search-bar" placeholder="Search here by title, theme or event date.">
+            <select class="form-select" aria-label="teste">
+              <option selected>Filmes</option>
+              <option value="1">Peças</option>
+              <option value="2">Shows</option>
+            </select>
+            <img src="images/lupa.png" alt="lupa" class="lupa" onclick="window.open(url='#')">
+          </form>
+        </div>
+        <div class="anchor-login">
+          <a href="#"><img class="key" src="images/key.png" alt="login"><p class="text-login">Login</p></a>
+        </div>
+    </header>
+    <main>
+      <section>
+        <div class="banner">
+            <img class="img-banner" src="images/banner.png" alt="imagem banner do site">
+        </div>
+        <div class="gallery">
+            <div class="gallery-container">
+              <img class="gallery-item gallery-item-1" src="images/1.png" data-index="1" onclick="window.open(this.src)">
+              <img class="gallery-item gallery-item-2" src="images/2.png" data-index="2" onclick="window.open(this.src)">
+              <img  class="gallery-item gallery-item-3" src="images/3.png" data-index="3" onclick="window.open(this.src)">
+              <img class="gallery-item gallery-item-4" src="images/4.png" data-index="4" onclick="window.open(this.src)">
+              <img class="gallery-item gallery-item-5" src="images/5.png" data-index="5" onclick="window.open(this.src)">
+            </div>
+            <div class="gallery-controls"></div>
+          </div>
+      </section>
+    </main>
+    <script src="carousel.js"></script>
+  </body>
+
+</html>
